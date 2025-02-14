@@ -1,0 +1,171 @@
+/* Container styles */
+.study-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 128px 160px 128px 160px;
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .study-content {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  /* Only change this part in your existing CSS file */
+  .study-title {
+    text-align: center;
+    width: 949px;
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: bold;
+    color: #282938;
+    margin: 0px -45px 16px -45px; /* Changed to 16px bottom margin */
+    font-family: "Poppins", sans-serif;
+  }
+  .study-meta {
+    height: 28px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 28px;
+    color: #282938;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+  
+  .study-meta span {
+    font-weight: normal;
+  }
+  
+  .study-image {
+    width: 1280px;
+    max-height: 477px;
+    margin: 16px -229px;
+  }
+  
+  .study-description {
+    font-weight: 400;
+    text-align: center;
+    height: 84px;
+    opacity: 70%;
+    width: 831px;
+    line-height: 28px;
+    font-size: 1rem;
+    color: #282938;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .study-read-more {
+    width: 89px;
+    height: 28px;
+    opacity: 70%;
+    line-height: 28px;
+    font-size: 16px;
+    color: #2405f2;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .study-read-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1400px) {
+    .study-container {
+      padding: 100px 120px;
+    }
+  
+    .study-title {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .study-image {
+      width: 100%;
+      margin: 16px 0;
+    }
+  
+    .study-description {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .study-container {
+      padding: 80px 100px;
+    }
+  
+    .study-title {
+      font-size: 42px;
+      line-height: 56px;
+      height: auto;
+    }
+  
+    .study-image {
+      max-height: 400px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .study-container {
+      padding: 60px 80px;
+    }
+  
+    .study-title {
+      font-size: 36px;
+      line-height: 48px;
+    }
+  
+    .study-description {
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .study-container {
+      padding: 40px 60px;
+    }
+  
+    .study-title {
+      font-size: 32px;
+      line-height: 44px;
+    }
+  
+    .study-meta {
+      font-size: 14px;
+    }
+  
+    .study-description {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .study-container {
+      padding: 30px 20px;
+    }
+  
+    .study-title {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  
+    .study-meta {
+      font-size: 13px;
+    }
+  
+    .study-description {
+      font-size: 13px;
+      line-height: 22px;
+    }
+  
+    .study-read-more {
+      font-size: 14px;
+    }
+  }

@@ -1,0 +1,180 @@
+/* Parent container with background color */
+.process-background {
+  background-color: #ffffff; 
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+.wrapper-process {
+  width: 80%;
+  max-width: 1280px;
+}
+.process-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 128px 0px;
+  background-color: #fff;
+  font-family: "Poppins";
+}
+  
+  .process-title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #282938;
+    font-family: 'Poppins';
+  }
+  
+  .process-steps {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1280px;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-family: 'Poppins';
+  }
+  
+  .process-step {
+    flex: 1;
+    position: relative;
+    padding: 20px;
+    text-align: left;
+    font-family: 'Poppins';
+  }
+  
+  .process-icon {
+    font-size: 2rem;
+    color: #0000ff;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: 'Poppins';
+  }
+  
+  .step-title {
+    color: #282938;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: 'Poppins';
+  }
+  
+  .step-description {
+    font-size: 16px;
+    color: #282938;
+    line-height: 1.5;
+    text-align: left;
+    font-family: 'Poppins';
+  }
+  
+  .process-step::after {
+    content: '';
+    position: absolute;
+    top: calc(20px + (24px / 2));
+    right: 0;
+    height: 2px;
+    width: calc(100% - 20px - 12px - 24px);
+    background: repeating-linear-gradient(
+      to right,
+      #2405F2,
+      #2405F2 5px,
+      transparent 5px,
+      transparent 10px
+    );
+  }
+  
+  /* Mobile and Tablet Adjustments */
+  @media (max-width: 1024px) {
+    .process-title {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+  
+    .process-steps {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 80px;
+    }
+  
+    .process-step {
+      width: 100%;
+      padding: 15px 0;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+  .step-title,.step-description {
+    text-align: center;
+}
+  
+    .process-icon {
+      font-size: 1.8rem;
+    }
+  
+    .step-title {
+      font-size: 1.1rem;
+    }
+  
+    .step-description {
+      font-size: 15px;
+    }
+    .process-step::after {
+      top: calc(100% + 20px);
+      left: 50%;
+      transform: translateX(-50%);
+      height: 80px;
+      width: 2px;
+      background: repeating-linear-gradient(
+        to bottom,
+        #2405F2,
+        #2405F2 5px,
+        transparent 5px,
+        transparent 10px
+      );
+  }
+  .process-step:last-of-type::after{
+    display: none;
+  }
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 480px) {
+    .wrapper-process {
+      width: 95%;
+    }
+  
+    .process-section {
+      padding: 40px 0px;
+    }
+  
+    .process-title {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+  
+    .process-step {
+      padding: 10px 0;
+      margin-bottom: 15px;
+    }
+  
+    .process-icon {
+      font-size: 1.5rem;
+    }
+  
+    .step-title {
+      font-size: 1rem;
+    }
+  
+    .step-description {
+      font-size: 14px;
+    }
+  
+    .process-step:not(:last-child)::after {
+      bottom: -8px;
+    }
+  }
+  
+  

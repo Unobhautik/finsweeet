@@ -1,0 +1,91 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: "poppins";
+    box-sizing: border-box;
+  }
+  
+  /* Great section styles */
+  .great-section {
+    text-align: center;
+    padding: 128px 0;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .great-content {
+    max-width: 630px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .great-title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: #282938;
+    margin-bottom: 16px;
+  }
+  
+  .great-title br {
+    display: block;
+    content: "";
+  }
+  
+  .great-description {
+    font-size: 16px;
+    line-height: 28px;
+    color: #282938;
+    opacity: 0.7;
+    margin-bottom: 32px;
+  }
+  
+  .great-button {
+    padding: 15px 51px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #282938;
+    background-color: #FCD980;
+    border: none;
+    border-radius: 41px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .great-button:hover {
+    background-color: #FCD980DD;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .great-section {
+      padding: 80px 0;
+    }
+  
+    .great-title {
+      font-size: 36px;
+      line-height: 48px;
+    }
+  
+    .great-description {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .great-section {
+      padding: 60px 0;
+    }
+  
+    .great-title {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  
+    .great-button {
+      padding: 12px 40px;
+      font-size: 16px;
+    }
+  }

@@ -1,0 +1,157 @@
+/* benefits.css */
+.benefits {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font directly to the benefits section */
+  }
+  
+  .benefits-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: #282938;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  
+  .heading-top {
+    display: block;
+    font-size: 48px;
+    line-height: 64px;
+    color: #282938;
+    letter-spacing: -0.02em;
+  }
+  
+  .heading-bottom {
+    display: block;
+    font-size: 48px;
+    line-height: 64px;
+    color: #282938;
+    letter-spacing: -0.01em;
+    margin-top: 0.5rem;
+  }
+  
+  .benefits-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #f4f6fc;
+    padding: 2rem;
+    max-width: 405px;
+    width: 100%;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .icon {
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-image {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+  }
+  
+  .card-title {
+    color: #282938;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .benefits-footer {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  
+  .logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .logo-image {
+    width: 117px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .logo-image:first-child {
+    width: 176px;
+    height: 84px;
+  }
+  
+  .logo-image:hover {
+    filter: grayscale(0%);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .benefits-heading {
+      font-size: 2rem;
+    }
+  
+    .heading-top,
+    .heading-bottom {
+      font-size: 36px;
+      line-height: 48px;
+    }
+  
+    .benefits-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      max-width: 100%;
+    }
+  
+    .logos {
+      gap: 1rem;
+    }
+  
+    .logo-image {
+      width: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .benefits-heading {
+      font-size: 1.75rem;
+    }
+  
+    .heading-top,
+    .heading-bottom {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    .card {
+      padding: 1.5rem;
+    }
+  
+    .logo-image {
+      width: 50px;
+    }
+  }

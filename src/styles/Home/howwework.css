@@ -1,0 +1,231 @@
+/* howwework.css */
+
+.howwework-background {
+  background-color: #F4F6FC;
+}
+
+.howwework-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.howwework {
+  padding: 128px 0px;
+  display: grid;
+  gap: 20px;
+  align-items: start;
+  grid-template-columns: repeat(2, 1fr);
+  height: 660px;
+}
+
+.howwework .child:nth-child(1) {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  padding: 0 46px;
+  width: 500px;
+  gap: 16px;
+}
+
+.howwework .child:nth-child(1) h2 {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+.howwework .child:nth-child(1) p {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.7;
+  max-width: 450px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.howwework .child:nth-child(1) a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--Royal-Blue, #2405F2);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.howwework .child:nth-child(1) a .arrowcontact {
+  width: 24px;
+  margin-left: 7px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.howwework .child:nth-child(1) a:hover {
+  color: #2405F2;
+}
+
+.howwework .child:nth-child(1):hover a .arrowcontact {
+  transform: translateX(5px);
+}
+
+.arrowcontact {
+  width: 24px;
+  margin-left: 7px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.howwework .child:nth-child(1) a:hover .arrowcontact {
+  transform: translateX(5px);
+}
+
+.howwework .child:nth-child(2) {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.howwework .child:nth-child(2) .child-box {
+  gap: 24px;
+  height: 190px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.howwework .child:nth-child(2) .child-box .img {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.howwework .child:nth-child(2) .child-box .img img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.howwework .child:nth-child(2) .child-box .img::before {
+  content: '';
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.howwework .child:nth-child(2) .child-box .txt {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: start;
+}
+
+.howwework .child:nth-child(2) .child-box .txt h3 {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.howwework .child:nth-child(2) .child-box .txt p {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.7;
+}
+
+@media (max-width: 1200px) {
+  .howwework-wrapper {
+    padding: 0 15px;
+  }
+  
+  .howwework-background {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .howwework {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    height: auto;
+    text-align: center;
+  }
+
+  .howwework .child:nth-child(1) {
+    width: 100%;
+    padding: 0 20px;
+    align-items: center;
+  }
+
+  .howwework .child:nth-child(1) h2,
+  .howwework .child:nth-child(1) p {
+    text-align: center;
+  }
+
+  .howwework .child:nth-child(2) {
+    grid-template-columns: 1fr;
+  }
+
+  .howwework .child:nth-child(2) .child-box .img {
+    justify-content: center;
+  }
+
+  .howwework .child:nth-child(2) .child-box .txt {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .howwework-wrapper {
+    padding: 0 10px;
+  }
+
+  .howwework-background {
+    padding: 30px 0;
+  }
+
+  .howwework .child:nth-child(1) {
+    padding: 0;
+  }
+
+  .howwework .child:nth-child(1) h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .howwework .child:nth-child(1) p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .howwework .child:nth-child(2) .child-box {
+    height: auto;
+    align-items: center;
+  }
+
+  .howwework .child:nth-child(2) .child-box .txt h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .howwework .child:nth-child(2) .child-box .txt p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

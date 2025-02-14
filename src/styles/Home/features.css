@@ -1,0 +1,165 @@
+/* homepage features.css */
+
+.features-wrapper {
+  max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+.features-section {
+    padding: 4rem 1rem;
+    background-color: #f4f6fc;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .section-title {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #282938;
+    text-align: center;
+    display: block;
+    margin-bottom: 12px;
+  }
+  
+  .section-heading {
+    color: #282938;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.33;
+    margin-bottom: 64px;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .feature-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+    color: #6366f1;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #111827;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(40, 41, 56, 0.7);
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  @media (max-width: 1200px) {
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  
+    .feature-card {
+      width: 100%;
+      height: auto;
+      min-height: 300px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .features-section {
+      padding: 3rem 1rem;
+    }
+  
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  
+    .feature-card {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      min-height: 250px;
+      margin: 0 auto 1.5rem;
+    }
+  
+    .designThatSolves {
+      width: 100%;
+      max-width: 100%;
+      font-size: 36px;
+      line-height: 48px;
+    }
+  
+    .section-title {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto 12px;
+    }
+  
+    .section-heading {
+      font-size: 36px;
+      line-height: 48px;
+      margin: 0 auto 48px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .features-section {
+      padding: 2rem 1rem;
+    }
+  
+    .section-title {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  
+    .section-heading {
+      font-size: 28px;
+      line-height: 38px;
+      margin: 0 auto 32px;
+    }
+  
+    .feature-card {
+      padding: 1rem;
+      min-height: 200px;
+    }
+  
+    .feature-title {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  
+    .feature-description {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }

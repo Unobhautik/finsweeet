@@ -1,0 +1,55 @@
+/* blogdetail.css for the other router whn i click on blog */
+.blog-detail-page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: "Arial", sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .blog-detail-page-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2C3E50;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .blog-detail-page-meta {
+    color: #7F8C8D;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .blog-detail-page-image {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-detail-page-content {
+    font-size: 1.2rem;
+    color: #4D4D4D;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  
+  @media (max-width: 768px) {
+    .blog-detail-page-container {
+      padding: 20px 10px;
+    }
+  
+    .blog-detail-page-title {
+      font-size: 2rem;
+    }
+  
+    .blog-detail-page-content {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,143 @@
+/* piece.css */
+.piece {
+  text-align: center;
+  padding: 128px 77px 128px 77px;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.piece-heading {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #282938;
+  text-align: center;
+  line-height: 64px;
+  letter-spacing: -0.02em;
+}
+
+.piece-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.piece-card {
+  background-color: #f4f6fc;
+  padding: 2rem;
+  max-width: 405px;
+  width: 100%;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.piece-card:hover {
+  transform: translateY(-10px);
+}
+
+.piece-icon {
+  margin-bottom: 1.5rem;
+}
+
+.piece-feature-image {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.piece-card-title {
+  color: #282938;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.piece-card-text {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.piece-footer {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.piece-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.0rem;
+  flex-wrap: wrap;
+}
+
+.piece-logo-image {
+  max-width: 117px;
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+.piece-logo-image:first-child {
+  max-width: 176px;
+  width: 100%;
+  height: auto;
+}
+
+.piece-logo-image:hover {
+  filter: grayscale(0%);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .piece {
+    padding: 64px 20px;
+  }
+
+  .piece-heading {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .piece-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .piece-card {
+    max-width: 100%;
+  }
+
+  .piece-logos {
+    gap: 2rem;
+  }
+
+  .piece-logo-image {
+    max-width: 80px;
+  }
+
+  .piece-logo-image:first-child {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .piece-heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .piece-card {
+    padding: 1.5rem;
+  }
+
+  .piece-logo-image {
+    max-width: 60px;
+  }
+
+  .piece-logo-image:first-child {
+    max-width: 90px;
+  }
+}

@@ -1,0 +1,333 @@
+/* blog.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.blog-background-2 {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 0px 0px 128px 0px;
+}
+
+.wrapper-blog-2 {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+}
+  
+  .blog-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 31px;
+  }
+  
+  .blog-card {
+    transition: transform 0.2s ease;
+    background-color: #ffffff;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .blog-image-wrapper {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+  }
+  
+  .blog-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-card:hover .blog-image {
+    transform: scale(1.05);
+  }
+  
+  .blog-content {
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* New text container with gap */
+.blog-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+.blog-date {
+  width: 92px;
+  height: 28px;
+  opacity: 70%;
+  display: block;
+  font-size: 16px;
+  color: #282938;
+  line-height: 28px;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  margin: 0; /* Remove margins as we're using gap */
+}
+
+.blog-title {
+  width: 404px;
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #282938;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  margin: 0; /* Remove margins as we're using gap */
+}
+
+.blog-description {
+  font-weight: 400;
+  line-height: 28px;
+  width: 404px;
+  opacity: 70%;
+  font-size: 16px;
+  color: #282938;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  margin: 0; /* Remove margins as we're using gap */
+}
+
+.blog-read-more {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #1c1e53;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog-arrow {
+  width: 24px;
+  transition: transform 0.2s ease;
+}
+
+.blog-read-more:hover {
+  color: #666;
+}
+
+.blog-read-more:hover .blog-arrow {
+  transform: translateX(4px);
+}
+  
+  .blog-date {
+    width: 92px;
+    height: 28px;
+    opacity: 70%;
+    display: block;
+    font-size: 16px;
+    color: #282938;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 28px;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .blog-title {
+    height: 108px;
+    width: 404px;
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #282938;
+    margin-bottom: 0.75rem;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .blog-description {
+    font-weight: 400;
+    line-height: 28px;
+    width: 404px;
+    height: 56px;
+    opacity: 70%;
+    font-size: 16px;
+    color: #282938;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .blog-read-more {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #1c1e53;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .blog-arrow {
+    width: 24px;
+    transition: transform 0.2s ease;
+  }
+  
+  .blog-read-more:hover {
+    color: #666;
+  }
+  
+  .blog-read-more:hover .blog-arrow {
+    transform: translateX(4px);
+  }
+  
+  @media (max-width: 1400px) {
+    .blog-container {
+      padding: 0px 100px 100px;
+    }
+  
+    .blog-title,
+    .blog-description {
+      width: 100%;
+    }
+  
+    .blog-background,
+    .blog-card {
+      background-color: #ffffff;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .blog-container {
+      padding: 0px 80px 80px;
+    }
+  
+    .blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .blog-heading {
+      font-size: 2.25rem;
+    }
+  
+    .blog-background,
+    .blog-card {
+      background-color: #ffffff;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .blog-container {
+      padding: 0px 60px 60px;
+    }
+  
+    .blog-heading {
+      font-size: 2rem;
+    }
+  
+    .blog-title {
+      font-size: 22px;
+      line-height: 32px;
+      height: auto;
+    }
+  
+    .blog-description {
+      font-size: 15px;
+      line-height: 26px;
+      height: auto;
+    }
+  
+    .blog-background,
+    .blog-card {
+      background-color: #ffffff;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .blog-container {
+      padding: 0px 40px 40px;
+    }
+  
+    .blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  
+    .blog-heading {
+      font-size: 1.75rem;
+    }
+  
+    .blog-date {
+      font-size: 14px;
+    }
+  
+    .blog-title {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  
+    .blog-description {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  
+    .blog-background,
+    .blog-card {
+      background-color: #ffffff;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .blog-container {
+      padding: 0px 20px 20px;
+    }
+  
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .blog-heading {
+      font-size: 1.5rem;
+    }
+  
+    .blog-title {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  
+    .blog-description {
+      font-size: 13px;
+      line-height: 22px;
+    }
+  
+    .blog-read-more {
+      font-size: 0.8rem;
+    }
+  
+    .blog-background,
+    .blog-card {
+      background-color: #ffffff;
+    }
+  }

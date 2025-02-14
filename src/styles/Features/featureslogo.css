@@ -1,0 +1,71 @@
+/* featureslogo.css */
+
+/* Background color for the main div */
+.features-logos-background {
+  background-color: #ffffff;  /* You can change the background color as per your requirement */
+  padding: 96px 9px; /* Add padding to the top and bottom of the background */
+}
+
+/* Wrapper div with fixed width */
+.wrapper-logos {
+  width: 80%; /* Set the fixed width */
+  margin: 0 auto; /* Center the wrapper */
+  max-width: 1200px; /* Max width to avoid stretching too much */
+}
+
+/* Logos Section */
+.features-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap:59px;
+  flex-wrap: wrap;
+}
+
+.features-logo-image-1 {
+  width: auto;
+  max-width: clamp(100px, 15vw, 155px);
+  height: clamp(30px, 5vw, 75px);
+  object-fit: contain;
+  color: #000000; /* Add this for black text */
+  transition: transform 0.3s ease;
+}
+
+.features-logo-image {
+  width: auto;
+  max-width: clamp(100px, 15vw, 150px);
+  height: clamp(30px, 5vw, 50px);
+  opacity: 80%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.features-logo-image:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .features-logos-section {
+    text-align: center;
+  }
+
+  .features-logos {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-logos {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-logo-image {
+    width: 100%;
+    max-width: 120px;
+  }
+}

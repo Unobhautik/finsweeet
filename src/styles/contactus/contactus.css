@@ -1,0 +1,251 @@
+.contact-wrapper {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-section {
+  width: 100%;
+  max-width: 1531px;
+  padding: 128px 270px 128px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 64px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-header h2 {
+  font-size: 48px;
+  line-height: 64px;
+  margin-bottom: 16px;
+  color: #282938;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-header p {
+  font-size: 16px;
+  opacity: 70%;
+  line-height: 28px;
+  color: #282938;
+  max-width: 562px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-container {
+  background-color: #f4f6fc;
+  padding: 55px 76px 69px 74px;
+  border-radius: 12px;
+  max-width: 1061px;
+  height: 640px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.submit-button-cup {
+  width: 254px;
+  height: 64px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px 51px;
+  border: none;
+  border-radius: 41px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.submit-button-cup:hover {
+  background-color: #1c1d27;
+}
+
+.form-row {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-group.full-width {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+label {
+  text-align: left;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 18px 32px;
+  border: 1px solid #0000001f;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #000000;
+
+  font-family: "Poppins", sans-serif;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 138px;
+  font-family: "Poppins", sans-serif;
+}
+
+.submit-button:hover-2 {
+  background-color: #1c1d27;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Media Queries */
+@media (max-width: 1400px) {
+  .contact-section {
+    padding: 100px 200px;
+  }
+
+  .form-container {
+    padding: 50px 60px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact-section {
+    padding: 80px 150px;
+  }
+
+  .contact-header h2 {
+    font-size: 42px;
+    line-height: 56px;
+  }
+
+  .form-container {
+    padding: 40px 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-section {
+    padding: 60px 100px;
+  }
+
+  .contact-header h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .form-container {
+    padding: 35px 40px;
+  }
+
+  .submit-button-cup {
+    width: 220px;
+    height: 56px;
+    font-size: 16px;
+    padding: 12px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 50px 40px;
+  }
+
+  .contact-header {
+    margin-bottom: 40px;
+  }
+
+  .contact-header h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .contact-header p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .form-container {
+    padding: 30px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  label {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  input,
+  textarea {
+    padding: 14px 24px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-section {
+    padding: 40px 20px;
+  }
+
+  .contact-header h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .form-container {
+    padding: 25px 20px;
+  }
+
+  .submit-button-cup {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+}

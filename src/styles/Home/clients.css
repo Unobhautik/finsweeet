@@ -1,0 +1,262 @@
+/* Homepage Clients Section */
+.clients-background {
+  width: 100%;
+  background-color: #fff;
+  padding: 128px 0;
+  position: relative;
+}
+
+.clients-wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
+.clients-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 110px;
+}
+  
+  .clients-header {
+    flex: 1;
+    max-width: 327px;
+  }
+  
+  .clients-header h2 {
+    text-align: left;
+    color: #282938;
+    font-family: "Poppins", sans-serif;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    margin: 0;
+  }
+  
+  .clients-header p {
+    text-align: left;
+    color: #282938;
+    margin-top: 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    opacity: 0.7;
+  }
+  
+  .clients-testimonial {
+    flex: 2;
+    max-width: 843px;
+  }
+  
+  .testimonials-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .testimonial-text {
+    width: 100%;
+    position: relative;
+  }
+  
+  .testimonial-slides-container {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .testimonial-slide {
+    min-width: 100%;
+    flex-shrink: 1;
+  }
+  
+  .testimonial-slide p {
+    text-align: left;
+    color: #282938;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    margin: 0 0 48px 0;
+    max-width: 843px;
+  }
+  
+  .client-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+  }
+  
+  .clients-name {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  
+  .client-photo {
+    width: 52px;
+    height: 52px;
+  }
+  
+  .client-details h4 {
+    text-align: left;
+    color: #282938;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 0px 0;
+  }
+  
+  .client-details p {
+    width: 183px;
+    height: 28px;
+    line-height: 28px;
+    text-align: left;
+    color: #282938;
+    font-family: "Cap 02", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .clients-navigation {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .nav-button {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #f4f6fc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-icon {
+    width: 24px;
+    height: 24px;
+    transition: filter 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background: #5239fa;
+  }
+  
+  .nav-button:hover .nav-icon {
+    filter: brightness(0) invert(1);
+  }
+  
+  .nav-button:active {
+    background: #3a2bb3;
+  }
+  
+ /* All base code remains exactly the same until the media queries */
+
+@media (max-width: 1200px) {
+  .clients-container {
+      padding: 64px 5%;
+      gap: 60px;
+  }
+
+  .clients-header h2,
+  .clients-header p {
+      text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .clients-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 24px;
+      gap: 40px;
+  }
+
+  .clients-header {
+      text-align: center;
+      max-width: 100%;
+  }
+
+  .clients-testimonial {
+      max-width: 100%;
+  }
+
+  .testimonial-slide p {
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+  }
+
+  .client-info {
+      flex-direction: column;
+      gap: 24px;
+      text-align: center;
+  }
+
+  .client-details h4,
+  .client-details p {
+      text-align: center;
+  }
+
+  .clients-navigation {
+      margin-top: 16px;
+      justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-container {
+      padding: 32px 16px;
+  }
+
+  .clients-header h2 {
+      font-size: 28px;
+      line-height: 40px;
+      text-align: center;
+  }
+
+  .clients-header p {
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+  }
+
+  .testimonial-slide p {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+  }
+
+  .client-details h4 {
+      font-size: 16px;
+      text-align: center;
+  }
+
+  .client-details p {
+      font-size: 11px;
+      text-align: center;
+  }
+
+  .nav-button {
+      width: 40px;
+      height: 40px;
+  }
+
+  .nav-icon {
+      width: 20px;
+      height: 20px;
+  }
+}
