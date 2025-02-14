@@ -128,21 +128,38 @@
   transform: translateX(10px);
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/* Keep all your original styles the same until the media queries */
+
+/* Only modifying the responsive parts below */
 @media (max-width: 1024px) {
+  .padding-global {
+    padding: 60px 20px;
+  }
+
   .hero {
     flex-direction: column;
     text-align: center;
+    padding: 40px 20px;
+    margin: 40px auto;
   }
   
   .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     max-width: 100%;
   }
   
   .hero-content h1 {
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.3;
+    text-align: center;
+  }
+  
+  .text-block {
+    max-width: 600px;
+    margin: 0 auto 48px;
   }
   
   .text-block p {
@@ -151,19 +168,30 @@
   
   .button-block {
     justify-content: center;
+    width: 100%;
   }
   
   .hero-image {
-    max-width: 100%;
-    justify-content: center;
-    margin-top: 40px;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto 0;
   }
 }
 
 @media (max-width: 768px) {
+  .padding-global {
+    padding: 40px 20px;
+  }
+  
+  .hero {
+    padding: 30px 20px;
+    margin: 30px auto;
+  }
+  
   .hero-content h1 {
     font-size: 36px;
-    line-height: 48px;
+    line-height: 1.3;
+    margin-bottom: 20px;
   }
   
   .button-block {
@@ -171,24 +199,49 @@
     align-items: center;
     gap: 20px;
   }
+  
+  .btn-rounded {
+    width: 200px;
+    height: 56px;
+  }
 }
 
 @media (max-width: 480px) {
+  .padding-global {
+    padding: 30px 15px;
+  }
+  
+  .hero {
+    padding: 20px 15px;
+    margin: 20px auto;
+  }
+  
   .hero-content h1 {
     font-size: 32px;
-    line-height: 44px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+  }
+  
+  .text-block {
+    margin-bottom: 24px;
   }
   
   .text-block p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .btn-rounded {
+    width: 180px;
+    height: 50px;
+  }
+  
+  .btn-rounded .btn-text {
     font-size: 14px;
     line-height: 24px;
   }
   
   .btn-link {
     font-size: 14px;
-  }
-  
-  .hero-image {
-    margin: 30px auto 0;
   }
 }
